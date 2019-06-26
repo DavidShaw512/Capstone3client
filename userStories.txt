@@ -1,0 +1,31 @@
+SUBWAY SANDWICH BUILDER/CALORIE COUNTER
+
+USER STORIES
+
+LANDING PAGE
+ACTIONS - Login | register
+User can log in or register
+User clicks "Register" and fills out information for a new profile
+    Username must not be taken, typical registration stuff
+User is then logged in on a successful registration and taken to the dashboard
+User can also log into a profile that already exists
+On a successful login, user is taken to the dashboard
+
+DASHBOARD
+ACTIONS - Logout | Open sidebar x2 | Add ingredient/topping | Save
+Dashboard contains header, main content w/options, and two tabs labelled "Saved" and "Popular"
+There is a GUI of just an empty plate above, will fill up graphiclally as user fills in options
+There is also a numerical counter just below the graphic, counts calories as options are added
+Other counters could count protien, fats, carbs, sugars, etc...
+"Save" button will be disabled until at least a bread and one option are chosen
+Tabs will open from the sides ("Popular" on the left, "Saved" on the right)
+"Popular" tab will have a list of a few popular sandwiches
+"Saved" tab will list the sandwiches the user has saved
+
+TABS
+ACTIONS - Delete a sandwich | View sandwich detail
+In the tabs, user can click on each sandwich and it will 'accordion' out and show all of
+    the relevant toppings/ingredients and calorie count, for ease of reference while 
+    ordering
+
+

@@ -1,0 +1,9 @@
+.dynamicDisplay {
+    border: 1px dotted;
+    text-align: center;
+}
+
+.nutritionCounter {
+    display: inline-block;
+    width: 48.5%
+}
