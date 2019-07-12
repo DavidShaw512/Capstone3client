@@ -1,0 +1,25 @@
+.headerContainer {
+    background-color: rgb(107, 107, 107);
+    color: white;
+    padding: 10px;
+}
+
+.headerContent {
+    max-width: 900px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.headerTitle {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.headerMenu {
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+    /* position: relative;
+    right: 0px; */
+}

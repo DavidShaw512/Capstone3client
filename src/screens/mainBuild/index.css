@@ -1,9 +1,52 @@
-.dynamicDisplay {
-    border: 1px dotted;
+.mainBuild {
     text-align: center;
+}
+
+.ingredientButton {
+    height: 30px;
+    margin: 5px auto;
+    width: 70%;
+    padding: 5px;
+}
+
+.breadTop {
+    background-color: rgb(199, 169, 1);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.sauce {
+    background-color: #800080ab;
+}
+
+.veggies {
+    background-color: #02bb02e3;
+}
+
+.cheese {
+    background-color: yellow;
+}
+
+.meat {
+    background-color: #da0303b0;
+}
+
+.breadBottom {
+    background-color: rgb(199, 169, 1);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .nutritionCounter {
     display: inline-block;
-    width: 48.5%
+    width: 48.5%;
+    border: 1px dotted;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+.sandwichSaveButton {
+    border-radius: 50px;
+    border: 3px solid;
+    background-color: gray;
 }
