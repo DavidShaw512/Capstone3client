@@ -34,3 +34,5 @@ export default function Community() {
         </div>
     )
 }
+
+// Make a components folder, get components split out

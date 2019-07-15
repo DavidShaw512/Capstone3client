@@ -2,12 +2,12 @@ import React from 'react';
 
 import Header from './common/components/header'
 
-import MainBuild from './screens/mainBuild/index';
-import Login from './screens/login/index';
-import Signup from './screens/signup/index';
-import UserProfile from './screens/userProfile/index';
-import Community from './screens/community/index';
-import IngredientBuild from './screens/ingredientBuild/index';
+import MainBuild from './screens/mainBuild/mainBuildIndex';
+import Login from './screens/login/loginIndex';
+import Signup from './screens/signup/signupIndex';
+import UserProfile from './screens/userProfile/userProfileIndex';
+import Community from './screens/community/communityIndex';
+import IngredientBuild from './screens/ingredientBuild/ingredientBuildIndex';
 
 import './App.css';
 

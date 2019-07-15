@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Signup from './index';
+import Signup from './signupIndex';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
