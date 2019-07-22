@@ -9,6 +9,10 @@ export default function MainBuild() {
     return (
         <div className="mainBuild">
             <IngredientSidebar className="sidebar breadbar" category="Bread"/>
+            <IngredientSidebar className="sidebar saucebar" category="Sauces"/>
+            <IngredientSidebar className="sidebar veggiesbar" category="Veggies"/>
+            <IngredientSidebar className="sidebar cheesebar" category="Cheese"/>
+            <IngredientSidebar className="sidebar meatbar" category="Meat"/>
             <h2>Build Your Sandwich</h2>
             <BuildInterface/>
         </div>

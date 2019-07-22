@@ -1,9 +1,5 @@
 import React from 'react';
 
-import './ingredientSidebar.css';
-
-
-
 const IngredientSidebar = (props) => {
     return (
         <div className={props.className}>

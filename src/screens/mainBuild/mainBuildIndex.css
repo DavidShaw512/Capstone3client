@@ -53,7 +53,7 @@
 
 .sidebar {
     position: absolute;
-    left: 0px;
+    left: -240px;
     top: 0px;
     background-color: white;
     height: 100%;
@@ -62,5 +62,21 @@
 }
 
 .breadbar {
-    background-color: rgb(199, 169, 1)
+    background-color: #c7a901;
+}
+
+.saucebar {
+    background-color: #a151a1;
+}
+
+.veggiebar {
+    background-color: #27c028;
+}
+
+.cheesebar {
+    background-color: yellow;
+}
+
+.meatbar {
+    background-color: #dd4e54;
 }
