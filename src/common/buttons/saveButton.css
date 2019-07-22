@@ -1,0 +1,15 @@
+.saveButton {
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 30px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.savebutton:hover {
+    padding: 5px 50px;
+    background-color: rgb(89, 197, 161);
+}
+

@@ -1,0 +1,12 @@
+.mainMenu {
+    background-color: white;
+    border: 2px solid;
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    padding: 15px;
+    list-style-type: none;
+    box-shadow: 0 2px 3px;
+    z-index: 100;
+}

@@ -19,7 +19,8 @@
 .headerMenu {
     display: inline-block;
     float: right;
+}
+
+.headerMenuButton {
     cursor: pointer;
-    /* position: relative;
-    right: 0px; */
 }

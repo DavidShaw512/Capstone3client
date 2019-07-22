@@ -31,13 +31,3 @@
     background-color: darksalmon;
     cursor: pointer;
 }
-
-.addNew {
-    display: inline-block;
-    border: 1px solid;
-    background-color: rgb(183, 247, 183);
-    margin: 5px;
-    width: 47%;
-    height: 150px;
-    text-align: center;
-}

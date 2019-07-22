@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from './common/components/header'
+import Header from './common/header/header'
 
 import MainBuild from './screens/mainBuild/mainBuildIndex';
 import Login from './screens/login/loginIndex';
@@ -16,9 +16,8 @@ function App() {
     <div className="App">
       <Header />
       <div className="mainContent">
-        <Community />
+        <MainBuild />
       </div>
-
     </div>
   );
 }
