@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Header from './common/header/header'
 
@@ -13,12 +14,19 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="mainContent">
-        <MainBuild />
+    <Router>
+      <div className="App">
+        <Header />
+        <main className="mainContent">
+          <Route exact path='/' component={MainBuild} />
+          <Route exact path='/login' component={Login} />
+          <Route exact path='/signup' component={Signup} />
+          <Route exact path='/userProfile' component={UserProfile} />
+          <Route exact path='/community' component={Community} />
+          <Route exact path='/ingredientBuild' component={IngredientBuild} />
+        </main>
       </div>
-    </div>
+    </Router>
   );
 }
 
