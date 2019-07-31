@@ -1,16 +1,19 @@
 import React from 'react';
 
-import Form from './components/ingredientBuildForm'
+import MainLayout from '../../common/layouts/mainLayout';
+import Form from './components/ingredientBuildForm';
 
-import './ingredientBuildIndex.css'
+import './ingredientBuildIndex.css';
 
 export default function IngredientBuild() {
     return (
-        <div className="ingredientBuild">
-            <h1>Build a Custom Ingredient</h1>
-            <div className="buildArea">
-                <Form/>
+        <MainLayout>
+            <div className="ingredientBuild">
+                <h1>Build a Custom Ingredient</h1>
+                <div className="buildArea">
+                    <Form/>
+                </div>
             </div>
-        </div>
+        </MainLayout>
     )
 }

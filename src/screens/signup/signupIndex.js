@@ -1,15 +1,18 @@
 import React from 'react';
 
-import SignupForm from './components/signupForm'
+import MainLayout from '../../common/layouts/mainLayout';
+import SignupForm from './components/signupForm';
 
-import './signupIndex.css'
+import './signupIndex.css';
 
 export default function Signup() {
     return (
-        <div className="">
-            <h1>Signup</h1>
-            <SignupForm/>
-        </div>
+        <MainLayout>
+            <div className="">
+                <h1>Signup</h1>
+                <SignupForm/>
+            </div>
+        </MainLayout>
     )
 }
 

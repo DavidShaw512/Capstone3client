@@ -1,5 +1,6 @@
 import React from 'react';
 
+import MainLayout from '../../common/layouts/mainLayout';
 import ItemCard from '../../common/cards/itemCard';
 import AddNew from './components/addNew/addNew'
 
@@ -24,16 +25,18 @@ import './userProfileIndex.css'
 
 export default function UserProfile() {
     return (
-        <div className="profile">
-            <h1>My Profile</h1>
-            <div className="sandwichesTab">My Sandwiches</div>
-            <div className="ingredientsTab">My Ingredients</div>
-            <div className="cardTable">
-                <ItemCard name="Item 1" details="Details"/>
-                <ItemCard name="Item 2" details="Details"/>
-                <ItemCard name="Item 3" details="Details"/>
-                <AddNew category="Sandwich"/>
+        <MainLayout>
+            <div className="profile">
+                <h1>My Profile</h1>
+                <div className="sandwichesTab">My Sandwiches</div>
+                <div className="ingredientsTab">My Ingredients</div>
+                <div className="cardTable">
+                    <ItemCard name="Item 1" details="Details"/>
+                    <ItemCard name="Item 2" details="Details"/>
+                    <ItemCard name="Item 3" details="Details"/>
+                    <AddNew category="Sandwich"/>
+                </div>
             </div>
-        </div>
+        </MainLayout>
     )
 }

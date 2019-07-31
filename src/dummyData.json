@@ -1,0 +1,98 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "email": "test@test.com",
+            "password": "test"
+        },
+        {
+            "id": "2",
+            "email": "dummy@dummy.com",
+            "password": "dummy"
+        }
+    ],
+
+    "sandwiches": [
+        {
+            "name": "BLT",
+            "bread": "",
+            "sauces": "",
+            "veggies": "",
+            "cheese": "",
+            "meat": "",
+            "userID": "1"
+        },
+        {
+            "name": "PB & J",
+            "bread": "",
+            "sauces": "",
+            "veggies": "",
+            "cheese": "",
+            "meat": "",
+            "userID": "1"
+        },
+        {
+            "id": "1",
+            "name": "Tuna melt",
+            "bread": "",
+            "sauces": [
+                {
+                    "name": "Mustard",
+                    "servingSize": "1 Tbsp",
+                    "calories": "0",
+                    "protien": "0",
+                    "carbs": "0",
+                    "fats": "0",
+                    "id": "10"
+                }
+            ],
+            "veggies": "",
+            "cheese": "",
+            "meat": "",
+            "userID": "2"
+        }
+        // Ingredients will be complex objects that refer to IDs
+    ],
+
+    "ingredients": [
+        {
+            "breads": [
+                {
+                    "name": "White",
+                    "servingSize": "2 slices",
+                    "calories": "0",
+                    "protien": "0",
+                    "carbs": "0",
+                    "fats": "0"
+                },
+                {
+                    "name": "Wheat",
+                    "servingSize": "2 slices",
+                    "calories": "0",
+                    "protien": "0",
+                    "carbs": "0",
+                    "fats": "0"
+                }
+            ],
+
+            "sauces": [
+                {
+                    "name": "Mustard",
+                    "servingSize": "1 Tbsp",
+                    "calories": "0",
+                    "protien": "0",
+                    "carbs": "0",
+                    "fats": "0"
+                },
+                {
+                    "name": "Mayonnaise",
+                    "servingSize": "1 Tbsp",
+                    "calories": "0",
+                    "protien": "0",
+                    "carbs": "0",
+                    "fats": "0"
+                }
+            ]
+        }
+    ]
+}
