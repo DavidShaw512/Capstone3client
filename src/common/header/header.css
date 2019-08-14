@@ -23,4 +23,14 @@
 
 .headerMenuButton {
     cursor: pointer;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    background-color: #ffffff00;
+}
+
+.hidden {
+    display: none;
 }
