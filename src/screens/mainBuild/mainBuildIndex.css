@@ -12,29 +12,31 @@
 }
 
 .breadTop {
-    background-color: rgb(199, 169, 1);
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
 
-.sauce {
-    background-color: #800080ab;
+.Bread {
+    background-color: #c7a901;
 }
 
-.veggies {
-    background-color: #02bb02e3;
+.Sauces {
+    background-color: #a151a1;
 }
 
-.cheese {
+.Veggies {
+    background-color: #27c028;
+}
+
+.Cheese {
     background-color: yellow;
 }
 
-.meat {
-    background-color: #da0303b0;
+.Meat {
+    background-color: #dd4e54;
 }
 
 .breadBottom {
-    background-color: rgb(199, 169, 1);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
@@ -55,9 +57,8 @@
 
 .sidebar {
     position: absolute;
-    left: -240px;
+    left: -0px;
     top: 0px;
-    background-color: white;
     height: 100%;
     width: 250px;
     z-index: 99;
