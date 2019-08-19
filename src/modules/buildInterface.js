@@ -9,7 +9,20 @@ export const CLOSE_SIDEBAR = "CLOSE_SIDEBAR";
 const defaultState = {
     openSidebar: false,
     category: "",
-
+    currentSandwich: {
+        name: "",
+        bread: "Rye",
+        sauces: [],
+        veggies: [],
+        cheese: "",
+        meat: "",
+        nutrition: {
+            calories: 0,
+            protien: 0,
+            carbs: 0,
+            fats: 0
+        }
+    }
 }
 
 // reducer
@@ -27,11 +40,6 @@ export default function reducer(state = defaultState, action = {}) {
                 ...state,
                 openSidebar: false
             }
-        // case SET_CATEGORY:
-        //     return {
-        //         ...state,
-        //         category: action.category
-        //     }
         default: return state
     }
 }
@@ -50,11 +58,4 @@ export const closeSidebar = () => {
         type: CLOSE_SIDEBAR
     }
 }
-
-// export const setCategory = (category) => {
-//     return {
-//         type: SET_CATEGORY,
-//         category
-//     }
-// }
 

@@ -63,23 +63,3 @@
     width: 250px;
     z-index: 99;
 }
-
-.breadbar {
-    background-color: #c7a901;
-}
-
-.saucebar {
-    background-color: #a151a1;
-}
-
-.veggiebar {
-    background-color: #27c028;
-}
-
-.cheesebar {
-    background-color: yellow;
-}
-
-.meatbar {
-    background-color: #dd4e54;
-}

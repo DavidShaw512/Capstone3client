@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import build from './build';
 import header from './header';
+import profile from './profile';
 // import ingredientSidebar from './ingredientSidebar';
 import buildInterface from './buildInterface';
 
@@ -14,6 +15,7 @@ import buildInterface from './buildInterface';
 export default combineReducers({
     build,
     header,
+    profile,
     // ingredientSidebar,
     buildInterface
 })

@@ -9,7 +9,8 @@ import './mainBuildIndex.css'
 class MainBuild extends React.Component {
     // The state of this component will hold things like sidebar category, contents,
     // open/closed, className (which could include an 'open'/'closed' class)
-    // *** Might be better to rearrange this so Build Interface is the stateful one
+    // ---| Might be better to rearrange this so Build Interface is the stateful one,
+    // ---| and this is just stateless and presentational.
 
     render() {
         return (

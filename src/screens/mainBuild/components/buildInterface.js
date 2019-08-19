@@ -15,19 +15,19 @@ class BuildInterface extends React.Component {
                 {/* Ingredient sidebar, moved from mainBuild component */}
                 <IngredientSidebar className={"sidebar " + this.props.category} category={this.props.category} open={this.props.open}/>
 
-                {/* Sandwich graphic interface */}
-                <IngredientButton customClickEvent={this.props.toggleBreadSidebar.bind(this)} className="ingredientButton Bread breadTop" name="Bread"/>
-                <IngredientButton customClickEvent={this.props.toggleSaucesSidebar.bind(this)} className="ingredientButton Sauces" name="Sauces"/>
-                <IngredientButton customClickEvent={this.props.toggleVeggiesSidebar.bind(this)} className="ingredientButton Veggies" name="Veggies"/>
-                <IngredientButton customClickEvent={this.props.toggleCheeseSidebar.bind(this)} className="ingredientButton Cheese" name="Cheese"/>
-                <IngredientButton customClickEvent={this.props.toggleMeatSidebar.bind(this)} className="ingredientButton Meat" name="Meat"/>
-                <IngredientButton customClickEvent={this.props.toggleBreadSidebar.bind(this)} className="ingredientButton Bread breadBottom" name="Bread"/>
+                {/* Colorful sandwich graphic interface */}
+                <IngredientButton customClickEvent={this.props.toggleBreadSidebar.bind(this)} className="ingredientButton Bread breadTop" name={"Bread: " + this.props.sandwich.bread}/>
+                <IngredientButton customClickEvent={this.props.toggleSaucesSidebar.bind(this)} className="ingredientButton Sauces" name={"Sauces: " + this.props.sandwich.sauces}/>
+                <IngredientButton customClickEvent={this.props.toggleVeggiesSidebar.bind(this)} className="ingredientButton Veggies" name={"Veggies: " + this.props.sandwich.veggies}/>
+                <IngredientButton customClickEvent={this.props.toggleCheeseSidebar.bind(this)} className="ingredientButton Cheese" name={"Cheese: " + this.props.sandwich.cheese}/>
+                <IngredientButton customClickEvent={this.props.toggleMeatSidebar.bind(this)} className="ingredientButton Meat" name={"Meat: " + this.props.sandwich.meat}/>
+                <IngredientButton customClickEvent={this.props.toggleBreadSidebar.bind(this)} className="ingredientButton Bread breadBottom" name={"Bread: " + this.props.sandwich.bread}/>
 
                 {/* Nutrition counter array */}
-                <NutritionCounter className="nutritionCounter" name="Calories" count="500"/>
-                <NutritionCounter className="nutritionCounter" name="Protien" count="20g"/>
-                <NutritionCounter className="nutritionCounter" name="Carbs" count="20g"/>
-                <NutritionCounter className="nutritionCounter" name="Total Fats" count="15g"/>
+                <NutritionCounter className="nutritionCounter" name="Calories" count={this.props.sandwich.nutrition.calories}/>
+                <NutritionCounter className="nutritionCounter" name="Protien" count={this.props.sandwich.nutrition.protien + "g"}/>
+                <NutritionCounter className="nutritionCounter" name="Carbs" count={this.props.sandwich.nutrition.carbs + "g"}/>
+                <NutritionCounter className="nutritionCounter" name="Total Fats" count={this.props.sandwich.nutrition.fats + "g"}/>
 
                 {/* Save button, from common folder */}
                 <SaveButton/>
@@ -40,7 +40,7 @@ const mapStateToProps = state => {
     return {
         open: state.buildInterface.openSidebar,
         category: state.buildInterface.category,
-
+        sandwich: state.buildInterface.currentSandwich
     }
 }
 
