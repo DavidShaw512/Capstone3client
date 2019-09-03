@@ -1,5 +1,14 @@
-.cardTable {
+.cardTableSandwiches {
     border-top: 8px solid aquamarine;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.cardTableIngredients {
+    border-top: 8px solid darksalmon;
+    background-color: darksalmon;
     text-align: center;
     padding: 5px;
     margin: 0 auto;

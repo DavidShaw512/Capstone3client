@@ -3,7 +3,7 @@ import React from 'react';
 import CommonInput from '../../../common/inputs/commonInput';
 import SaveButton from '../../../common/buttons/saveButton';
 
-const Form = () => {
+const IngredientForm = () => {
     return (
         <form id="jsBuildForm" className="buildForm">
             <CommonInput label="Name" name="name" type="text" />
@@ -19,4 +19,4 @@ const Form = () => {
     )
 }
 
-export default Form;
+export default IngredientForm;

@@ -9,6 +9,7 @@ import Signup from './screens/signup/signupIndex';
 import UserProfile from './screens/userProfile/userProfileIndex';
 import Community from './screens/community/communityIndex';
 import IngredientBuild from './screens/ingredientBuild/ingredientBuildIndex';
+import './dummyData.json';
 
 import './App.css';
 

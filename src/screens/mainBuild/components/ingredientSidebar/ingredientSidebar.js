@@ -1,6 +1,34 @@
+// Should this component be stateful? Or merged into the buildInterface component?
+
 import React from 'react';
 
+import './ingredientSidebar.css';
+
 const IngredientSidebar = (props) => {
+    let items = props.items.map(item => {
+        return (
+            <li className="sidebarItem"
+                key={item.id}>
+                <strong>{item.name}</strong><br/>
+                <div className="itemDetail">
+                    Cal:<br/>
+                    {item.calories}
+                </div>
+                <div className="itemDetail">
+                    Pro:<br/>
+                    {item.protien}
+                </div>
+                <div className="itemDetail">
+                    Carb:<br/>
+                    {item.carbs}
+                </div>
+                <div className="itemDetail">
+                    Fat:<br/>
+                    {item.fats}
+                </div>
+            </li>
+        )
+    })
     
     if (props.open === false) {
         return null
@@ -8,13 +36,9 @@ const IngredientSidebar = (props) => {
     else {
         return (
             <div className={props.className}>
-                <h2>{props.category}</h2>
-                <hr/>
+                <h2 className="sidebarHeader">{props.category}</h2>
                 <ul className="optionsList">
-                    <li>Option 1</li>
-                    <li>Option 2</li>
-                    <li>Option 3</li>
-        
+                    {items}
                 </ul>
             </div>
         )

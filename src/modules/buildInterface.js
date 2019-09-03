@@ -10,12 +10,12 @@ const defaultState = {
     openSidebar: false,
     category: "",
     currentSandwich: {
-        name: "",
-        bread: "Rye",
-        sauces: [],
-        veggies: [],
-        cheese: "",
-        meat: "",
+        name: "Turkey Swiss on Sourdough",
+        bread: "Sourdough",
+        sauces: ["Mayo", "Mustard"],
+        veggies: ["Lettuce", "Onions"],
+        cheese: "Swiss",
+        meat: "Turkey",
         nutrition: {
             calories: 0,
             protien: 0,
@@ -40,7 +40,8 @@ export default function reducer(state = defaultState, action = {}) {
                 ...state,
                 openSidebar: false
             }
-        default: return state
+        default: 
+            return state
     }
 }
 

@@ -1,0 +1,39 @@
+.sidebarHeader {
+    padding: 15px;
+    margin: 0;
+    border-bottom: 2px solid;
+    background-color: rgba(255, 255, 255, 0.664);
+}
+
+.optionsList {
+    text-align: center;
+    padding: 5px;
+}
+
+.sidebarItem {
+    list-style: none;
+    margin: 5px auto;
+    padding: 10px 0;
+    width: 80%;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.sidebarItem:hover {
+    cursor: pointer;
+
+}
+
+.itemDetail {
+    display: inline-block;
+    width: 24%;
+    font-size: 16px;
+    background-color: lightgray;
+    border-left: 1px solid;
+    text-align: left;
+    padding-left: 1px;
+    margin-top: 5px;
+}
