@@ -1,19 +1,7 @@
 .profile {
-    border-top: 8px solid aquamarine;
     text-align: center;
     padding: 5px;
     margin: 0 auto;
-}
-
-.card {
-    width: 47%;
-    height: 150px;
-    padding: 15px;
-    border: 2px solid black;
-    box-shadow: 0 2px 2px;
-    display: inline-block;
-    margin: 5px;
-    text-align: left;
 }
 
 .sandwichesTab {
@@ -30,4 +18,25 @@
     padding: 5px 30px;
     background-color: darksalmon;
     cursor: pointer;
+}
+
+.categoryButtons {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categoryButton {
+    margin: 0 auto;
+    font-size: 14px;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 3px;
+    box-shadow: 0px 3px 2px;
+}
+
+@media only screen and (min-width: 500px) {
+    .categoryButton {
+        width: 15%;
+    }
 }

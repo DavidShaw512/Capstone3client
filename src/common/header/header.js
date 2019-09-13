@@ -6,7 +6,7 @@ import { menuToggle, MENU_TOGGLE } from '../../modules/header'
 
 import './header.css'
 
-class Header extends React.Component {
+export class Header extends React.Component {
     // constructor(props) {
     //     super(props);
     //     this.state = {

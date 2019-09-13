@@ -2,14 +2,14 @@
 
 export const SHOW_SANDWICHES = "SHOW_SANDWICHES";
 export const SHOW_INGREDIENTS = "SHOW_INGREDIENTS";
+export const CHANGE_CATEGORY = "CHANGE_CATEGORY";
 
 
 // default state
 
 export const defaultState = {
     showSandwiches: true,
-    sandwiches: [],
-    ingredients: []
+    category: ""
 }
 
 
@@ -26,6 +26,11 @@ export default function reducer(state = defaultState, action = {}) {
             return {
                 ...state,
                 showSandwiches: false
+            }
+        case CHANGE_CATEGORY:
+            return {
+                ...state,
+                category: action.category
             }
         default: 
             return state
@@ -44,5 +49,12 @@ export const showSandwiches = () => {
 export const showIngredients = () => {
     return {
         type: SHOW_INGREDIENTS
+    }
+}
+
+export const changaeCategory = (category) => {
+    return {
+        type: CHANGE_CATEGORY,
+        category
     }
 }

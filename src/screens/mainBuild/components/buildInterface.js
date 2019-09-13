@@ -9,34 +9,19 @@ import { TOGGLE_SIDEBAR } from '../../../modules/buildInterface';
 import SaveButton from '../../../common/buttons/saveButton';
 import data from '../../../dummyData.json';
 
-// const BuildInterface = () => {
+const ingredients = data.ingredients;
+
 class BuildInterface extends React.Component {
 
     componentDidMount () {
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then(response => {
                 console.log(response);
-                console.log(data.ingredients.bread);
+                console.log(data.ingredients);
             });
     }
 
     render() {
-        const category = this.props.category.toLowerCase();
-        const items = () => {
-            switch (category) {
-                case "bread":
-                    return data.ingredients.bread;
-                case "sauces":
-                    return data.ingredients.sauces;
-                case "veggies":
-                    return data.ingredients.veggies;
-                case "cheese":
-                    return data.ingredients.cheese;
-                case "meat":
-                    return data.ingredients.meat;
-                default: return data.ingredients.bread;
-            }
-        } 
         return (
             <section>
                 {/* Ingredient sidebar, moved from mainBuild component */}
@@ -44,7 +29,7 @@ class BuildInterface extends React.Component {
                     className={"sidebar " + this.props.category} 
                     category={this.props.category} 
                     open={this.props.open}
-                    items={items()}
+                    items={ingredients}
                 />
 
                 {/* Colorful sandwich graphic interface */}

@@ -6,7 +6,7 @@ import data from '../../../dummyData.json';
 import { SHOW_SANDWICHES, SHOW_INGREDIENTS } from '../../../modules/community';
 
 const sandwiches = data.sandwiches;
-const ingredients = data.ingredients.sauces;
+const ingredients = data.ingredients;
 
 export class CommunityInterface extends React.Component {
 
@@ -22,12 +22,25 @@ export class CommunityInterface extends React.Component {
         )
     })
 
+    categoryButtons = () => {
+        return (
+            <div className="categoryButtons">
+                <button className="categoryButton" onClick={this.props.onClickBreadButton}>Bread</button>
+                <button className="categoryButton" onClick={this.props.onClickSauceButton}>Sauce</button>
+                <button className="categoryButton" onClick={this.props.onClickVeggiesButton}>Veggies</button>
+                <button className="categoryButton" onClick={this.props.onClickCheeseButton}>Cheese</button>
+                <button className="categoryButton" onClick={this.props.onClickMeatButton}>Meat</button>
+            </div>
+        )
+    }
+
     render() {
         return (
             <section>
                 <div className="sandwichesTab" onClick={this.props.onClickSandwiches}>Sandwiches</div>
                 <div className="ingredientsTab" onClick={this.props.onClickIngredients}>Ingredients</div>
                 <div className={this.props.showSandwiches ? "cardTableSandwiches" : "cardTableIngredients"}>
+                    {this.props.showSandwiches ? null : this.categoryButtons()}
                     {this.props.showSandwiches ? this.sandwichCards : this.ingredientCards}
                     {/* <ItemCard name="Item 1" details="details"/>
                     <ItemCard name="Item 2" details="details"/>

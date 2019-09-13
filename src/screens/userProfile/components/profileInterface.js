@@ -3,17 +3,12 @@ import { connect } from 'react-redux';
 
 import ItemCard from '../../../common/cards/itemCard';
 import AddNew from '../components/addNew/addNew';
-import { SHOW_SANDWICHES, SHOW_INGREDIENTS } from '../../../modules/profile';
+import { SHOW_SANDWICHES, SHOW_INGREDIENTS, CHANGE_CATEGORY } from '../../../modules/profile';
 import data from '../../../dummyData.json';
 
 
-// const sandwiches = data.sandwiches;
-// const ingredients = data.ingredients;
 
 export class ProfileInterface extends React.Component {
-
-    // sandwiches = () => {return data.sandwiches};
-    // ingredients = () => {return data.ingredients};
 
     sandwichCards = data.sandwiches.map(sandwich => {
         if (sandwich.userID === "u1") {
@@ -28,28 +23,38 @@ export class ProfileInterface extends React.Component {
         else {return null;}
     });
 
-    ingredientCards = data.ingredients.bread.map(ingredient => {
-        return (
-            <ItemCard 
-                name={ingredient.name} 
-                key={ingredient.id} 
-                details="details"
-            />
-        )
+    ingredientCards = data.ingredients.map(ingredient => {
+        return (ingredient.category === this.props.category 
+                ? 
+                <ItemCard 
+                    name={ingredient.name} 
+                    key={ingredient.id} 
+                    details="details"
+                />
+                :
+                null)
     });
 
+    categoryButtons = () => {
+        return (
+            <div className="categoryButtons">
+                <button className="categoryButton" onClick={this.props.onClickBreadButton}>Bread</button>
+                <button className="categoryButton" onClick={this.props.onClickSauceButton}>Sauce</button>
+                <button className="categoryButton" onClick={this.props.onClickVeggiesButton}>Veggies</button>
+                <button className="categoryButton" onClick={this.props.onClickCheeseButton}>Cheese</button>
+                <button className="categoryButton" onClick={this.props.onClickMeatButton}>Meat</button>
+            </div>
+        )
+    }
+
     render() {
-        // console.log(sandwiches);
         return (
             <section>
                 <div className="sandwichesTab" onClick={this.props.onClickSandwichTab}>My Sandwiches</div>
                 <div className="ingredientsTab" onClick={this.props.onClickIngredientsTab}>My Ingredients</div>
                 <div className={this.props.showSandwiches ? "cardTableSandwiches" : "cardTableIngredients"}>
-                    {/* <CardTable items={this.props.showSandwiches ? sandwiches : ingredients}/> */}
+                    {this.props.showSandwiches ? null : this.categoryButtons()}
                     {this.props.showSandwiches ? this.sandwichCards : this.ingredientCards}
-                    {/* <ItemCard name={this.props.showSandwiches ? "Sandwiches" : "Ingredients"} details="Details"/>
-                    <ItemCard name="Item 2" details="Details"/>
-                    <ItemCard name="Item 3" details="Details"/> */}
                     <AddNew category="Sandwich"/>
                 </div>
             </section>
@@ -59,14 +64,20 @@ export class ProfileInterface extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        showSandwiches: state.profile.showSandwiches
+        showSandwiches: state.profile.showSandwiches,
+        category: state.profile.category
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
         onClickSandwichTab: () => dispatch({type: SHOW_SANDWICHES}),
-        onClickIngredientsTab: () => dispatch({type: SHOW_INGREDIENTS})
+        onClickIngredientsTab: () => dispatch({type: SHOW_INGREDIENTS}),
+        onClickBreadButton: () => dispatch({type: CHANGE_CATEGORY, category: "bread"}),
+        onClickSauceButton: () => dispatch({type: CHANGE_CATEGORY, category: "sauces"}),
+        onClickVeggiesButton: () => dispatch({type: CHANGE_CATEGORY, category: "veggies"}),
+        onClickCheeseButton: () => dispatch({type: CHANGE_CATEGORY, category: "cheese"}),
+        onClickMeatButton: () => dispatch({type: CHANGE_CATEGORY, category: "meat"}),
     }
 }
 

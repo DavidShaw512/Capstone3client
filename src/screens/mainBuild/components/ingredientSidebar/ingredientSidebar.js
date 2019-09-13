@@ -6,7 +6,7 @@ import './ingredientSidebar.css';
 
 const IngredientSidebar = (props) => {
     let items = props.items.map(item => {
-        return (
+        return (item.category === props.category.toLowerCase() ?
             <li className="sidebarItem"
                 key={item.id}>
                 <strong>{item.name}</strong><br/>
@@ -27,6 +27,7 @@ const IngredientSidebar = (props) => {
                     {item.fats}
                 </div>
             </li>
+            : null
         )
     })
     

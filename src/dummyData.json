@@ -54,254 +54,270 @@
         }
     ],
 
-    "ingredients": {
-            "bread": [
-                {
-                    "name": "White",
-                    "id": "b1",
-                    "servingSize": "2 slices",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Wheat",
-                    "id": "b2",
-                    "servingSize": "2 slices",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Rye",
-                    "id": "b3",
-                    "servingSize": "2 slices",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Pumpernickel",
-                    "id": "b4",
-                    "servingSize": "2 slices",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Whole Grain",
-                    "id": "b5",
-                    "servingSize": "2 slices",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                }
-            ],
+    "ingredients": [
+        {
+            "category": "bread",
+            "name": "White",
+            "id": "b1",
+            "servingSize": "2 slices",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "bread",
+            "name": "Wheat",
+            "id": "b2",
+            "servingSize": "2 slices",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "bread",
+            "name": "Rye",
+            "id": "b3",
+            "servingSize": "2 slices",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "bread",
+            "name": "Pumpernickel",
+            "id": "b4",
+            "servingSize": "2 slices",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "bread",
+            "name": "Whole Grain",
+            "id": "b5",
+            "servingSize": "2 slices",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
 
-            "sauces": [
-                {
-                    "name": "Mustard",
-                    "id": "sc1",
-                    "servingSize": "1 Tbsp",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Mayonnaise",
-                    "id": "sc2",
-                    "servingSize": "1 Tbsp",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Ketchup",
-                    "id": "sc3",
-                    "servingSize": "1 Tbsp",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Relish",
-                    "id": "sc4",
-                    "servingSize": "1 Tbsp",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Grape Jelly",
-                    "id": "sc5",
-                    "servingSize": "1 Tbsp",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Peanut Butter",
-                    "id": "sc6",
-                    "servingSize": "1 Tbsp",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                }
-            ],
+        {
+            "category": "sauces",
+            "name": "Mustard",
+            "id": "sc1",
+            "servingSize": "1 Tbsp",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "sauces",
+            "name": "Mayonnaise",
+            "id": "sc2",
+            "servingSize": "1 Tbsp",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "sauces",
+            "name": "Ketchup",
+            "id": "sc3",
+            "servingSize": "1 Tbsp",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "sauces",
+            "name": "Relish",
+            "id": "sc4",
+            "servingSize": "1 Tbsp",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "sauces",
+            "name": "Grape Jelly",
+            "id": "sc5",
+            "servingSize": "1 Tbsp",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "sauces",
+            "name": "Peanut Butter",
+            "id": "sc6",
+            "servingSize": "1 Tbsp",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
 
-            "veggies": [
-                {
-                    "name": "Onions",
-                    "id": "v1",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Pickles",
-                    "id": "v2",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Tomatoes",
-                    "id": "v3",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Bell Peppers",
-                    "id": "v4",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Mushrooms",
-                    "id": "v5",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                }
-            ],
+        {
+            "category": "veggies",
+            "name": "Onions",
+            "id": "v1",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "veggies",
+            "name": "Pickles",
+            "id": "v2",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "veggies",
+            "name": "Tomatoes",
+            "id": "v3",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "veggies",
+            "name": "Bell Peppers",
+            "id": "v4",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "veggies",
+            "name": "Mushrooms",
+            "id": "v5",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
 
-            "cheese": [
-                {
-                    "name": "Provolone",
-                    "id": "c1",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "American",
-                    "id": "c2",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Swiss",
-                    "id": "c3",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Mozerella",
-                    "id": "c4",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Cheddar",
-                    "id": "c5",
-                    "servingSize": "2 Oz",
-                    "calories": "0",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                }
-            ],
+        {
+            "category": "cheese",
+            "name": "Provolone",
+            "id": "c1",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "cheese",
+            "name": "American",
+            "id": "c2",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "cheese",
+            "name": "Swiss",
+            "id": "c3",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "cheese",
+            "name": "Mozerella",
+            "id": "c4",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "cheese",
+            "name": "Cheddar",
+            "id": "c5",
+            "servingSize": "2 Oz",
+            "calories": "0",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
 
-            "meat": [
-                {
-                    "name": "Ham",
-                    "id": "m1",
-                    "servingSize": "4 Oz",
-                    "calories": "1",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Turkey",
-                    "id": "m2",
-                    "servingSize": "4 Oz",
-                    "calories": "2",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Grilled Chicken",
-                    "id": "m3",
-                    "servingSize": "4 Oz",
-                    "calories": "3",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Roast Beef",
-                    "id": "m4",
-                    "servingSize": "4 Oz",
-                    "calories": "4",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                },
-                {
-                    "name": "Balogna",
-                    "id": "m5",
-                    "servingSize": "4 Oz",
-                    "calories": "5",
-                    "protien": "0",
-                    "carbs": "0",
-                    "fats": "0"
-                }
-            ]
+        {
+            "category": "meat",
+            "name": "Ham",
+            "id": "m1",
+            "servingSize": "4 Oz",
+            "calories": "1",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "meat",
+            "name": "Turkey",
+            "id": "m2",
+            "servingSize": "4 Oz",
+            "calories": "2",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "meat",
+            "name": "Grilled Chicken",
+            "id": "m3",
+            "servingSize": "4 Oz",
+            "calories": "3",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "meat",
+            "name": "Roast Beef",
+            "id": "m4",
+            "servingSize": "4 Oz",
+            "calories": "4",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
+        },
+        {
+            "category": "meat",
+            "name": "Balogna",
+            "id": "m5",
+            "servingSize": "4 Oz",
+            "calories": "5",
+            "protien": "0",
+            "carbs": "0",
+            "fats": "0"
         }
+    ]
 }
